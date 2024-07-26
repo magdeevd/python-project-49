@@ -7,16 +7,13 @@ def get_rule():
 
 
 def is_prime(number):
-    if number <= 1:
-        return False
-    if number == 2:
-        return True
     if number % 2 == 0:
-        return False
-    for i in range(3, int(math.sqrt(number)) + 1, 2):
-        if number % i == 0:
-            return False
-    return True
+        return number == 2
+    i = 3
+    while i * i <= number and number % i != 0:
+        i += 2
+
+    return i * i > number
 
 
 def generate_attempt_question():
