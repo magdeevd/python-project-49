@@ -11,7 +11,7 @@ def gcd(a, b):
     return a
 
 
-def generate_attempt_question():
+def generate_question():
     first_number = random.randint(1, 100)
     second_number = random.randint(1, 100)
 

@@ -5,7 +5,7 @@ def get_rule():
     return 'What number is missing in the progression?'
 
 
-def generate_arithmetic_sequence():
+def generate_sequence():
     start = random.randint(1, 10)
     difference = random.randint(1, 10)
 
@@ -23,7 +23,7 @@ def hide_one_number_in_sequence(sequence):
     return sequence, hidden_number
 
 
-def generate_attempt_question():
-    sequence, hidden_number = hide_one_number_in_sequence(generate_arithmetic_sequence())
+def generate_question():
+    sequence, hidden_number = hide_one_number_in_sequence(generate_sequence())
 
     return f'Question: {' '.join(map(str, sequence))}', str(hidden_number)

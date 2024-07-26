@@ -1,4 +1,3 @@
-import math
 import random
 
 
@@ -16,7 +15,7 @@ def is_prime(number):
     return i * i > number
 
 
-def generate_attempt_question():
+def generate_question():
     number = random.randint(1, 100)
 
     correct_answer = 'yes' if is_prime(number) else 'no'

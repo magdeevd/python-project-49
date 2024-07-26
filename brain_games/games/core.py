@@ -21,7 +21,8 @@ def play_three_rounds(rule, question_generator):
         if answer == correct_answer:
             print('Correct!')
         else:
-            print(f"'{answer}' is wrong answer ;(. Correct answer was '{correct_answer}'")
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'")
             return False
 
     return True
