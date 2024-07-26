@@ -33,3 +33,5 @@ def start_game(rule, question_generator):
 
     if has_won:
         print(f'\nCongratulations, {name}!')
+    else:
+        print(f"\nLet's try again, {name}!")
